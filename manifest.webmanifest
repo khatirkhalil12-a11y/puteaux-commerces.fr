@@ -1,0 +1,23 @@
+{
+  "name": "Puteaux-Commerces.fr",
+  "short_name": "Puteaux",
+  "description": "L'annuaire de référence des commerces, artisans et indépendants de Puteaux.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#2D1A10",
+  "theme_color": "#2D1A10",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
