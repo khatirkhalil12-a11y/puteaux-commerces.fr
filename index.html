@@ -2914,6 +2914,55 @@ h2 .g{color:var(--brique)}
   .sig-layout { grid-template-columns: 1fr !important; }
 }
 
+
+html, body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  position:relative;
+}
+
+img, video, iframe, canvas, svg{
+  max-width:100%;
+  height:auto;
+}
+
+.hero,
+.hero-inner2,
+.hero-editorial,
+.hero-panel,
+.hero-panel-shell,
+.hero-right,
+.hero-card,
+.hero-card-search,
+.hero-local-card,
+.signature-band,
+.signature-wrap,
+.sig-layout,
+.chi-grid,
+.ev-grid,
+.actu-grid,
+.contact-inner,
+.ft-grid,
+.table-wrap{
+  max-width:100%;
+}
+
+@media (max-width: 960px){
+  .hero,
+  .hero-panel-shell,
+  .hero-panel,
+  .hero-panel-intro,
+  .hero-panel-search{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+}
+
 </style>
 
 <nav>
