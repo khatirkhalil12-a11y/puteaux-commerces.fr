@@ -166,11 +166,6 @@ h2 .g{color:var(--brique)}
 .fsel:focus{border-color:var(--orange)}
 .fsub{width:100%;background:var(--brique);color:white;border:none;padding:13px;border-radius:8px;font-size:0.9rem;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all 0.25s;display:flex;align-items:center;justify-content:center;gap:8px}
 .fsub:hover{background:var(--navy2);transform:translateY(-1px)}
-.fsub:disabled{opacity:.75;cursor:wait;transform:none}
-.form-status{display:none;margin-top:14px;padding:14px 16px;border-radius:10px;font-size:.9rem;line-height:1.6}
-.form-status.is-success{display:block;background:rgba(34,197,94,.10);border:1px solid rgba(34,197,94,.25);color:#166534}
-.form-status.is-error{display:block;background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.18);color:#991b1b}
-.hp-field{position:absolute;left:-5000px;opacity:0;pointer-events:none}
 
 footer{background:var(--navy);color:white;padding:48px 5% 28px}
 .ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.07)}
@@ -2994,47 +2989,47 @@ h2 .g{color:var(--brique)}
         </div>
         <div class="hero-feature-head">Commerces du mois</div>
         <div class="hero-shops">
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='fleurs en herbe';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('fleurs en herbe')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🌸</div>
             <div><div class="hshop-n">Fleurs en Herbe</div><div class="hshop-s">Fleuriste · 89 Rue de la République</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='les pipelettes';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('les pipelettes')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🍺</div>
             <div><div class="hshop-n">Les Pipelettes</div><div class="hshop-s">Brasserie · 2 Rue Marius Jacotot</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='beauty pyramid';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('beauty pyramid')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">💅</div>
             <div><div class="hshop-n">Beauty Pyramid&#x27;s</div><div class="hshop-s">Institut de beauté · Rue Lucien Voilin</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='juni restaurant';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('juni restaurant')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🍽️</div>
             <div><div class="hshop-n">JUNI Restaurant</div><div class="hshop-s">Restaurant · 9 Boulevard Richard Wallace</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='imperfetto';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('imperfetto')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🍝</div>
             <div><div class="hshop-n">Imperfetto</div><div class="hshop-s">Restaurant italien · Puteaux</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='shi shi do';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('shi shi do')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🥢</div>
             <div><div class="hshop-n">Shi Shi Do</div><div class="hshop-s">Restaurant · 29 Rue Rousselle</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='le sain sert';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('le sain sert')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🥗</div>
             <div><div class="hshop-n">Le Sain Sert</div><div class="hshop-s">Restaurant · 3 Rue Roque de Fillol</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='o gourmandises d\'ange';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('o gourmandises d\'ange')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🧁</div>
             <div><div class="hshop-n">O Gourmandises d&#x27;Ange</div><div class="hshop-s">Pâtisserie artisanale · 23 Rue Chantecoq</div></div>
             <span class="hshop-arr">→</span>
           </a>
-          <a href="#annuaire" class="hshop" onclick="document.getElementById('sch').value='cic';doFilter();scrollAndFilter()">
+          <a href="#annuaire" class="hshop" onclick="filterByShop('cic')">
             <div class="hshop-ico" style="background:rgba(255,255,255,.12)">🏦</div>
             <div><div class="hshop-n">CIC</div><div class="hshop-s">Banque · Place Simone Veil</div></div>
             <span class="hshop-arr">→</span>
@@ -6984,7 +6979,7 @@ h2 .g{color:var(--brique)}
 </div>
 <div class="sri-cat">Institut de beauté</div>
 <div class="sri-tel"><a href="tel:0669399792">06 69 39 97 92</a></div>
-<div class="sri-web"><a href="https://www.google.com/maps/search/?api=1&query=8%20Rue%20Lucien%20Voilin%2C%20Puteaux" target="_blank" rel="noopener">8 Rue Lucien Voilin</a></div>
+<div class="sri-web"><a href="https://beautypyramids92.fr" target="_blank" rel="noopener">beautypyramids92.fr</a></div>
 </div>
 <div class="shop-row-item" data-cat="beaute" data-n="BEAUTY TIME BY SHARON">
 <div class="sri-name">
@@ -7914,37 +7909,32 @@ h2 .g{color:var(--brique)}
     <div class="form-box">
       <div class="ft">Référencer ou corriger une fiche</div>
       <div class="fs">Commerçant, artisan, indépendant à Puteaux — c'est gratuit.</div>
-      <form class="contact-form" action="https://formspree.io/f/xvzdodwk" method="POST">
-        <div class="fr">
-          <div class="fg"><label class="fl" for="commerce-name">Nom du commerce *</label><input id="commerce-name" class="fi" type="text" name="nom_commerce" placeholder="Ex. Boulangerie du Centre, Pharmacie…" required></div>
-          <div class="fg"><label class="fl" for="contact-name">Votre nom *</label><input id="contact-name" class="fi" type="text" name="nom_contact" placeholder="Gérant, propriétaire ou habitant" required></div>
-        </div>
-        <div class="fg"><label class="fl" for="contact-email">Email *</label><input id="contact-email" class="fi" type="email" name="email" placeholder="contact@commerce.fr" required></div>
-        <div class="fg"><label class="fl" for="contact-phone">Téléphone</label><input id="contact-phone" class="fi" type="tel" name="telephone" placeholder="01 XX XX XX XX"></div>
-        <div class="fg">
-          <label class="fl" for="contact-category">Catégorie</label>
-          <select id="contact-category" class="fsel" name="categorie">
-            <option value="" selected>Choisir une catégorie</option>
-            <option>Restauration</option>
-            <option>Alimentation</option>
-            <option>Beauté</option>
-            <option>Santé</option>
-            <option>Services</option>
-            <option>Immobilier</option>
-            <option>Auto & mobilité</option>
-            <option>Mode & accessoires</option>
-            <option>Culture & loisirs</option>
-            <option>Hôtels & résidences</option>
-            <option>Fleurs</option>
-          </select>
-        </div>
-        <div class="fg"><label class="fl" for="contact-address">Adresse *</label><input id="contact-address" class="fi" type="text" name="adresse" placeholder="Adresse complète à Puteaux" required></div>
-        <div class="fg"><label class="fl" for="contact-message">Message</label><textarea id="contact-message" class="fi" name="message" style="min-height:90px;resize:vertical" placeholder="Votre activité, vos horaires, une correction à signaler…"></textarea></div>
-        <input type="hidden" name="_subject" value="Nouvelle demande depuis Puteaux-Commerces.fr">
-        <label class="hp-field" aria-hidden="true">Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
-        <button class="fsub" type="submit">✉️ Envoyer ma demande — c'est gratuit</button>
-        <div class="form-status" id="form-status" aria-live="polite"></div>
-      </form>
+      <div class="fr">
+        <div class="fg"><label class="fl">Nom du commerce *</label><input class="fi" type="text" placeholder="Ex. Boulangerie du Centre, Pharmacie…"></div>
+        <div class="fg"><label class="fl">Votre nom *</label><input class="fi" type="text" placeholder="Gérant, propriétaire ou habitant"></div>
+      </div>
+      <div class="fg"><label class="fl">Email *</label><input class="fi" type="email" placeholder="contact@commerce.fr"></div>
+      <div class="fg"><label class="fl">Téléphone</label><input class="fi" type="tel" placeholder="01 XX XX XX XX"></div>
+      <div class="fg">
+        <label class="fl">Catégorie</label>
+        <select class="fsel">
+          <option value="" disabled selected>Choisir une catégorie</option>
+          <option>Restauration</option>
+          <option>Alimentation</option>
+          <option>Beauté</option>
+          <option>Santé</option>
+          <option>Services</option>
+          <option>Immobilier</option>
+          <option>Auto & mobilité</option>
+          <option>Mode & accessoires</option>
+          <option>Culture & loisirs</option>
+          <option>Hôtels & résidences</option>
+          <option>Fleurs</option>
+        </select>
+      </div>
+      <div class="fg"><label class="fl">Adresse *</label><input class="fi" type="text" placeholder="Adresse complète à Puteaux"></div>
+      <div class="fg"><label class="fl">Message</label><textarea class="fi" style="min-height:90px;resize:vertical" placeholder="Votre activité, vos horaires, une correction à signaler…"></textarea></div>
+      <button class="fsub">✉️ Envoyer ma demande — c'est gratuit</button>
     </div>
   </div>
 </section>
@@ -8102,6 +8092,10 @@ function refresh() {
 function setFilter(c, btn) {
   activeCat = c;
   annuaireExpanded = true;
+  // Réinitialise la recherche pour éviter le cumul incohérent avec un commerçant sélectionné
+  searchQ = '';
+  const si = document.getElementById('sch');
+  if (si) si.value = '';
   document.querySelectorAll('.fb').forEach(b => b.classList.remove('on'));
   btn.classList.add('on');
   document.querySelectorAll('.cpill').forEach(p => {
@@ -8115,6 +8109,10 @@ function setFilter(c, btn) {
 function setCat(c, pill) {
   activeCat = c;
   annuaireExpanded = true;
+  // Réinitialise la recherche pour éviter le cumul incohérent avec un commerçant sélectionné
+  searchQ = '';
+  const si = document.getElementById('sch');
+  if (si) si.value = '';
   document.querySelectorAll('.cpill').forEach(p => p.classList.remove('on'));
   pill.classList.add('on');
   document.querySelectorAll('.fb').forEach(b => {
@@ -8142,6 +8140,10 @@ function scrollAndFilter() {
 function setCatDirect(c) {
   activeCat = c;
   annuaireExpanded = true;
+  // Réinitialise la recherche pour éviter le cumul incohérent avec un commerçant sélectionné
+  searchQ = '';
+  const si = document.getElementById('sch');
+  if (si) si.value = '';
   document.querySelectorAll('.fb').forEach(b => b.classList.remove('on'));
   document.querySelectorAll('.fb').forEach(b => {
     if (b.getAttribute('onclick')?.includes(`'${c}'`)) b.classList.add('on');
@@ -8152,6 +8154,18 @@ function setCatDirect(c) {
   });
   document.getElementById('annuaire').scrollIntoView({behavior:'smooth'});
   refresh();
+}
+
+// Filtre par commerçant depuis le hero : réinitialise la catégorie active pour éviter tout conflit
+function filterByShop(name) {
+  activeCat = 'all';
+  syncAllStateUI('all');
+  annuaireExpanded = true;
+  const si = document.getElementById('sch');
+  if (si) si.value = name;
+  searchQ = name.toLowerCase();
+  refresh();
+  document.getElementById('annuaire').scrollIntoView({behavior:'smooth'});
 }
 
 
@@ -8171,68 +8185,6 @@ function toggleAnnuaire() {
 }
 
 refresh();
-
-const contactForm = document.querySelector('.contact-form');
-const formStatus = document.getElementById('form-status');
-
-if (contactForm && formStatus) {
-  contactForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
-
-    if (!contactForm.reportValidity()) {
-      return;
-    }
-
-    const submitButton = contactForm.querySelector('.fsub');
-    const initialLabel = submitButton ? submitButton.innerHTML : '';
-
-    if (submitButton) {
-      submitButton.disabled = true;
-      submitButton.innerHTML = 'Envoi en cours…';
-    }
-
-    formStatus.className = 'form-status';
-    formStatus.textContent = '';
-
-    try {
-      const response = await fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      if (response.ok) {
-        contactForm.reset();
-        formStatus.className = 'form-status is-success';
-        formStatus.textContent = 'Merci ✨ Votre demande a bien été envoyée. Nous la traitons avec attention et revenons vers vous sous 48h.';
-      } else {
-        let errorMessage = "Une erreur s'est produite. Merci de réessayer dans quelques instants.";
-
-        try {
-          const data = await response.json();
-          if (Array.isArray(data?.errors) && data.errors.length) {
-            errorMessage = data.errors.map((item) => item.message).join(' ');
-          }
-        } catch (error) {
-          // Ignore JSON parsing issues and keep the default message.
-        }
-
-        formStatus.className = 'form-status is-error';
-        formStatus.textContent = errorMessage;
-      }
-    } catch (error) {
-      formStatus.className = 'form-status is-error';
-      formStatus.textContent = "Impossible d'envoyer le formulaire pour le moment. Merci de réessayer dans quelques instants.";
-    } finally {
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.innerHTML = initialLabel;
-      }
-    }
-  });
-}
 </script>
 
 <!-- ═══ BANNIÈRE AJOUTER À L'ÉCRAN D'ACCUEIL ═══ -->
